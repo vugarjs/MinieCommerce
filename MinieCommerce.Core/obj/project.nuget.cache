@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NvCYAJ0Xjj4=",
+  "dgSpecHash": "QCHsSMYVt6M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vugarjs\\source\\repos\\MinieCommerce\\MinieCommerce.Core\\MinieCommerce.Core.csproj",
+  "projectFilePath": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\MinieCommerce.Core\\MinieCommerce.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vugarjs\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\vugarjs\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

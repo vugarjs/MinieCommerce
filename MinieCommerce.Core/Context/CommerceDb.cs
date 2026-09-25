@@ -17,4 +17,12 @@ internal class CommerceDb : DbContext
         var stringConnection = "Server=localhost;Database=MinieCommerce;User Id=sa;Password=YourStrong!Passw0rd;";
         optionsBuilder.UseSqlServer(stringConnection);
     }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(CommerceDb).Assembly);
+    }
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        return base.SaveChangesAsync(cancellationToken);
+    }
 }

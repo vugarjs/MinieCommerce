@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vugarjs\\source\\repos\\MinieCommerce\\",
+  "WorkspaceRootPath": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E61311E2-22DE-4BD7-867C-E3162C281914}|MinieCommerce.Core\\MinieCommerce.Core.csproj|c:\\users\\vugarjs\\source\\repos\\miniecommerce\\miniecommerce.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E61311E2-22DE-4BD7-867C-E3162C281914}|MinieCommerce.Core\\MinieCommerce.Core.csproj|solutionrelative:miniecommerce.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|c:\\users\\vugarjs\\desktop\\miniecommerce\\miniecommerce.core\\context\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|solutionrelative:miniecommerce.core\\context\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|c:\\users\\vugarjs\\desktop\\miniecommerce\\miniecommerce.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|solutionrelative:miniecommerce.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vugarjs\\source\\repos\\MinieCommerce\\MinieCommerce.Core\\Program.cs",
-              "RelativeDocumentMoniker": "MinieCommerce.Core\\Program.cs",
-              "ToolTip": "C:\\Users\\vugarjs\\source\\repos\\MinieCommerce\\MinieCommerce.Core\\Program.cs",
-              "RelativeToolTip": "MinieCommerce.Core\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MinieCommerce.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Entities\\User.cs",
+              "RelativeToolTip": "MinieCommerce.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T11:43:59.528Z",
+              "WhenOpened": "2026-09-25T12:44:54.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Context\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "MinieCommerce.Core\\Context\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\vugarjs\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Context\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "MinieCommerce.Core\\Context\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T12:44:10.338Z",
               "EditorCaption": ""
             }
           ]
