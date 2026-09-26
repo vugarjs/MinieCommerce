@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Vuqar\\Desktop\\MinieCommerce\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|c:\\users\\vuqar\\desktop\\miniecommerce\\miniecommerce.core\\dtos\\productdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|solutionrelative:miniecommerce.core\\dtos\\productdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|c:\\users\\vuqar\\desktop\\miniecommerce\\miniecommerce.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7769DD97-F5D8-B4B1-BA99-4A1518918B1D}|MinieCommerce.Core\\MinieCommerce.Core.csproj|solutionrelative:miniecommerce.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Vuqar\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "MinieCommerce.Core\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\Vuqar\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Entities\\Product.cs",
-              "RelativeToolTip": "MinieCommerce.Core\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T07:27:57.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\Vuqar\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Dtos\\ProductDtos\\ProductDto.cs",
-              "RelativeDocumentMoniker": "MinieCommerce.Core\\Dtos\\ProductDtos\\ProductDto.cs",
-              "ToolTip": "C:\\Users\\Vuqar\\Desktop\\MinieCommerce\\MinieCommerce.Core\\Dtos\\ProductDtos\\ProductDto.cs",
-              "RelativeToolTip": "MinieCommerce.Core\\Dtos\\ProductDtos\\ProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T13:35:41.494Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
