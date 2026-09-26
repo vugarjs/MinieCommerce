@@ -14,7 +14,7 @@ internal class CommerceDb : DbContext
 
     override protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var stringConnection = "Server=localhost;Database=MinieCommerce;User Id=sa;Password=YourStrong!Passw0rd;";
+        var stringConnection = "Data Source=localhost\\SQLEXPRESS;Database=MinieCommerce;TrustServerCertificate=true;Integrated Security=True";
         optionsBuilder.UseSqlServer(stringConnection);
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

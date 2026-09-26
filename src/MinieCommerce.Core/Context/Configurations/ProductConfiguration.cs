@@ -15,6 +15,10 @@ namespace MinieCommerce.Core.Context.Configurations
             builder.HasIndex(x => x.Name)
                 .IsUnique();
 
+            builder.Property(x => x.Name) // Configure the Name property
+                .IsRequired()
+                .HasMaxLength(100);
+
             builder.Property(x => x.Price)
                 .IsRequired()
                 .HasColumnType("decimal(18,2)");
@@ -25,6 +29,11 @@ namespace MinieCommerce.Core.Context.Configurations
             builder.Property(x => x.IsActive)
                 .IsRequired()
                 .HasDefaultValue(true);
+
+            builder.HasOne(x => x.Category)
+                .WithMany(x => x.Products)
+                .HasForeignKey(x => x.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

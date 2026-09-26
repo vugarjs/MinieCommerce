@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MinieCommerce.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MinieCommerce.Core.Context.Configurations
 {
@@ -11,9 +8,10 @@ namespace MinieCommerce.Core.Context.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> builder)
         {
+            builder.ToTable("Orders");
             builder.HasKey(o => o.Id);
 
-            builder.Property(o=> o.OrderDate)
+            builder.Property(o => o.OrderDate)
                 .HasDefaultValueSql("GETDATE()")
                 .IsRequired();
 
@@ -24,6 +22,16 @@ namespace MinieCommerce.Core.Context.Configurations
             builder.Property(o => o.Status)
                 .HasConversion<string>()
                 .IsRequired();
+
+            builder.HasOne(o => o.User)
+                .WithMany(u => u.Orders)
+                .HasForeignKey(o => o.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(o => o.OrderItems)
+                .WithOne(oi => oi.Order)
+                .HasForeignKey(oi => oi.OrderId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

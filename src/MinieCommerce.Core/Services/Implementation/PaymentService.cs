@@ -19,7 +19,9 @@ internal class PaymentService : IPaymentService
     }
     public async Task<PaymentReturnDto> GetPaymentByOrderIdAsync(int orderId)
     {
-        var find = await _commerceDb.Payments.FirstOrDefaultAsync(p => p.OrderId == orderId);
+        var find = await _commerceDb.Payments
+            .AsNoTracking()
+            .FirstOrDefaultAsync(p => p.OrderId == orderId);
 
         if (find == null)
         {

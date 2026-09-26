@@ -45,7 +45,7 @@ internal class OrderService : IOrderService
 
     public async Task<OrderReturnDto> GetOrderDetailsAsync(int orderId)
     {
-        var order = await _commerce.Orders.FindAsync(orderId);
+        var order = await _commerce.Orders.AsNoTracking().SingleOrDefaultAsync(o => o.Id == orderId);
 
         var ordermap = _mapper.Map<OrderReturnDto>(order);
 
@@ -57,7 +57,7 @@ internal class OrderService : IOrderService
 
     public async Task<List<OrderReturnDto>> GetOrdersByUserIdAsync(int userId)
     {
-        var orders = await _commerce.Orders.Where(o => o.UserId == userId).ToListAsync();
+        var orders = await _commerce.Orders.AsNoTracking().Where(o => o.UserId == userId).ToListAsync();
         return orders.Select(o => _mapper.Map<OrderReturnDto>(o)).ToList();
     }
 

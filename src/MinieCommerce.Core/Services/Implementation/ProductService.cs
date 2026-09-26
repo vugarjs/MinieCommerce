@@ -35,26 +35,30 @@ internal class ProductService : IProductService
 
     public async Task<List<ProductReturnDto>> GetAllAsync()
     {
-        var products = await _commerce.Products.ToListAsync();
+        var products = await _commerce.Products
+            .AsNoTracking()
+            .ToListAsync();
         return products.Select(p => _mapper.Map<ProductReturnDto>(p)).ToList();
     }
 
 
     public async Task<ProductReturnDto> GetByIdAsync(int id)
     {
-        var product = _commerce.Products.Find(id);
+        var product = _commerce.Products
+            .AsNoTracking()
+            .SingleOrDefaultAsync(p => p.Id == id);
         var result = _mapper.Map<ProductReturnDto>(product);
         return result;
     }
 
-    public Task UpdateAsync(int id, ProdcutUpdateDto dto)
+    public async Task UpdateAsync(int id, ProdcutUpdateDto dto)
     {
         var product = _commerce.Products.Find(id);
         if (product != null)
         {
             _mapper.Map(dto, product);
             _commerce.Products.Update(product);
-            return _commerce.SaveChangesAsync();
+            await _commerce.SaveChangesAsync();
         }
         throw new Exception("Product not found");
     }

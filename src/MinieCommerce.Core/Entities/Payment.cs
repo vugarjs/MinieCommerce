@@ -9,8 +9,8 @@ internal class Payment : BaseEntity
     public int OrderId { get; set; }
     public Order Order { get; set; } = null!;
     public decimal Amount { get; set; }
-    public PaymentMethod Method { get; set; } 
+    public PaymentMethod Method { get; set; }
     public DateTime PaymentDate { get; set; }
-    public PaymentStatus Status { get; set; } 
+    public PaymentStatus Status { get; set; }
 
 }
