@@ -21,7 +21,7 @@ This project demonstrates best practices in data access layer design, domain-dri
 | **C#** | Primary Language | 13 |
 | **.NET** | Framework | 10 |
 | **Entity Framework Core** | ORM & Data Access | Latest |
-| **SQL Server** | Database | 2019+ |
+| **SQL Server** | Database | Lastest |
 | **Fluent API** | Entity Configuration | EF Core |
 | **AutoMapper** | DTO Mapping | Latest |
 | **Async/Await** | Asynchronous Operations | Native |
@@ -342,19 +342,6 @@ builder.HasOne(x => x.Category)
 - ✅ Decimal values use Precision(18,2)
 - ✅ Foreign keys configured with proper cascading behavior
 - ✅ Unique indexes on Email and Name fields
-
----
-
-## 📈 Future Enhancements
-
-- [ ] Implementing Unit of Work pattern
-- [ ] Add caching layer (Redis)
-- [ ] API endpoint controllers (Presentation layer)
-- [ ] Logging and Error Handling middleware
-- [ ] Unit and Integration tests
-- [ ] API documentation (Swagger/OpenAPI)
-- [ ] Authentication (JWT)
-- [ ] Authorization (Role-based & Policy-based)
 
 ---
 
