@@ -16,7 +16,6 @@ internal class OrderService : IOrderService
         _mapper = mapper;
         _commerce = commerce;
     }
-
     public async Task CancelOrderAsync(int orderId)
     {
         var order = await _commerce.Orders.FindAsync(orderId);
