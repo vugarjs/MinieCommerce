@@ -4,7 +4,6 @@
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![EF Core](https://img.shields.io/badge/EF%20Core-Latest-512BD4?style=flat-square&logo=entity-framework)](https://docs.microsoft.com/en-us/ef/core/)
 [![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server)](https://www.microsoft.com/en-us/sql-server/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)](https://github.com/vugarjs/MinieCommerce)
 
 ## 📋 Project Description
@@ -22,7 +21,7 @@ This project demonstrates best practices in data access layer design, domain-dri
 | **C#** | Primary Language | 13 |
 | **.NET** | Framework | 10 |
 | **Entity Framework Core** | ORM & Data Access | Latest |
-| **SQL Server** | Database | 2019+ |
+| **SQL Server** | Database | Lastest |
 | **Fluent API** | Entity Configuration | EF Core |
 | **AutoMapper** | DTO Mapping | Latest |
 | **Async/Await** | Asynchronous Operations | Native |
@@ -343,25 +342,6 @@ builder.HasOne(x => x.Category)
 - ✅ Decimal values use Precision(18,2)
 - ✅ Foreign keys configured with proper cascading behavior
 - ✅ Unique indexes on Email and Name fields
-
----
-
-## 📈 Future Enhancements
-
-- [ ] Implementing Unit of Work pattern
-- [ ] Add caching layer (Redis)
-- [ ] API endpoint controllers (Presentation layer)
-- [ ] Logging and Error Handling middleware
-- [ ] Unit and Integration tests
-- [ ] API documentation (Swagger/OpenAPI)
-- [ ] Authentication (JWT)
-- [ ] Authorization (Role-based & Policy-based)
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
