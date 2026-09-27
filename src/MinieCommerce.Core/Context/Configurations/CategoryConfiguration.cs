@@ -10,7 +10,7 @@ namespace MinieCommerce.Core.Context.Configurations
         {
             builder.HasKey(c => c.Id);
 
-            builder.HasIndex(c=>c.Name)
+            builder.HasIndex(c => c.Name)
                 .IsUnique();
 
             builder.Property(c => c.Name)
@@ -19,6 +19,7 @@ namespace MinieCommerce.Core.Context.Configurations
 
             builder.Property(c => c.Description)
                 .HasMaxLength(500);
+
         }
     }
 }
